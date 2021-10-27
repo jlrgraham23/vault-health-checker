@@ -14,12 +14,9 @@ builds:
 
     goarch:
       - amd64
+      - arm64
 
     main: .
-
-archive:
-  name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
-  format: zip
 
 snapshot:
   name_template: SNAPSHOT-{{.Timestamp}}-{{.ShortCommit}}
